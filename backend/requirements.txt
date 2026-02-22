@@ -1,0 +1,5 @@
+# Backend dependencies
+fastapi==0.115.8
+uvicorn[standard]==0.34.0
+sqlalchemy==2.0.38
+pydantic==2.10.6
