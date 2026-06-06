@@ -1,0 +1,105 @@
+.manage-setups-panel {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d2939;
+}
+
+.setup-create-form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  align-items: end;
+}
+
+.setup-create-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.setup-create-form input {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+}
+
+.setup-create-form button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #0b74de;
+  cursor: pointer;
+}
+
+.setup-create-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.setup-status {
+  margin: 10px 0 0;
+}
+
+.setup-status.error {
+  color: #b42318;
+}
+
+.setup-status.success {
+  color: #027a48;
+}
+
+.setup-list-wrap {
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+.setup-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.setup-table th,
+.setup-table td {
+  text-align: left;
+  border-bottom: 1px solid #eaecf0;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+.setup-table-input {
+  width: 100%;
+  min-width: 120px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font: inherit;
+}
+
+.setup-sort-input {
+  max-width: 110px;
+}
+
+.active-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.setup-save-button {
+  border: 1px solid #0b74de;
+  border-radius: 8px;
+  padding: 6px 10px;
+  background: #ffffff;
+  color: #0b74de;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.setup-save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

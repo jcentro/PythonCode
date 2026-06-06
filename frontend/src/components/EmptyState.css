@@ -1,0 +1,80 @@
+.app-empty-state {
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.app-empty-state.is-compact {
+  padding: 12px;
+  gap: 8px;
+}
+
+.app-empty-state.is-positive {
+  border-color: #b7e6c0;
+  background: #ecfdf3;
+}
+
+.app-empty-state-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid #d0d5dd;
+  background: #ffffff;
+  color: #667085;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.app-empty-state.is-positive .app-empty-state-icon {
+  border-color: #b7e6c0;
+  color: #067647;
+}
+
+.app-empty-state-copy {
+  display: grid;
+  gap: 4px;
+}
+
+.app-empty-state-copy h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #1d2939;
+}
+
+.app-empty-state-copy p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #475467;
+}
+
+.app-empty-state-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.app-empty-state-button {
+  border: 0;
+  border-radius: 8px;
+  background: #0b74de;
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.app-empty-state-button.secondary {
+  border: 1px solid #d0d5dd;
+  background: #ffffff;
+  color: #344054;
+}

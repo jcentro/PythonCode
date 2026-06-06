@@ -1,0 +1,94 @@
+.fills-editor {
+  display: grid;
+  gap: 8px;
+}
+
+.fills-table-wrap {
+  overflow-x: auto;
+}
+
+.fills-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.fills-table th,
+.fills-table td {
+  border-bottom: 1px solid #eaecf0;
+  padding: 6px;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.fills-table th {
+  color: #475467;
+  font-weight: 700;
+}
+
+.fills-table input,
+.fills-table select {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font: inherit;
+  background: #ffffff;
+  color: inherit;
+}
+
+.fills-remove-button,
+.fills-add-button {
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 5px 8px;
+  background: #f8fafc;
+  color: #344054;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fills-remove-button:disabled,
+.fills-add-button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.fills-editor-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.fills-empty {
+  color: #667085;
+}
+
+.fills-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 6px;
+}
+
+.fills-summary-grid > div {
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: #f8fafc;
+  display: grid;
+  gap: 2px;
+}
+
+.fills-summary-grid span {
+  font-size: 0.76rem;
+  color: #667085;
+}
+
+.fills-summary-grid strong {
+  font-size: 0.9rem;
+  color: #1d2939;
+}

@@ -1,0 +1,61 @@
+.trade-filters-form {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(9, minmax(0, 1fr)) auto;
+  align-items: end;
+  margin-bottom: 8px;
+}
+
+.trade-filters-form label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #344054;
+}
+
+.trade-filters-form input,
+.trade-filters-form select {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font: inherit;
+  color: inherit;
+  background: #ffffff;
+}
+
+.trade-filters-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.trade-filters-actions button {
+  border: 0;
+  border-radius: 8px;
+  padding: 7px 10px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #0b74de;
+  color: #ffffff;
+}
+
+.trade-filters-actions .trade-filters-clear {
+  background: #eaecf0;
+  color: #344054;
+}
+
+@media (max-width: 1100px) {
+  .trade-filters-form {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .trade-filters-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trade-filters-actions {
+    grid-column: 1 / -1;
+  }
+}

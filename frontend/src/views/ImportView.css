@@ -1,0 +1,263 @@
+.import-panel {
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d2939;
+}
+
+.import-panel h2 {
+  margin: 0 0 12px;
+  font-size: 1.2rem;
+}
+
+.import-upload-form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+}
+
+.import-upload-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.import-upload-form button {
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 12px;
+  background: #0b74de;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.import-upload-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.import-status {
+  margin: 10px 0 0;
+}
+
+.import-status.error {
+  color: #b42318;
+}
+
+.import-result {
+  margin-top: 10px;
+  border: 1px solid #b2ddff;
+  border-radius: 8px;
+  background: #eff8ff;
+  padding: 10px;
+}
+
+.import-result p {
+  margin: 0;
+}
+
+.import-result ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.import-warnings {
+  margin-top: 10px;
+  border: 1px solid #fedf89;
+  border-radius: 8px;
+  background: #fffaeb;
+  padding: 8px 10px;
+}
+
+.import-warnings summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.import-warnings ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+
+.import-preview {
+  margin-top: 12px;
+}
+
+.import-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.import-preview-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.import-duplicate-summary {
+  margin-top: 10px;
+  border: 1px solid #fecdca;
+  border-radius: 8px;
+  background: #fef3f2;
+  padding: 8px 10px;
+  color: #b42318;
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+
+.import-select-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.import-table-wrap {
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.import-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.import-table th,
+.import-table td {
+  text-align: left;
+  border-bottom: 1px solid #eaecf0;
+  padding: 8px 6px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.import-table select,
+.import-table input[type="text"] {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.import-expand-button {
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 2px 6px;
+  background: #f8fafc;
+  color: #344054;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.import-partial-badge {
+  border: 1px solid #fecdca;
+  border-radius: 999px;
+  padding: 1px 6px;
+  background: #fef3f2;
+  color: #b42318;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.import-status-cell {
+  display: grid;
+  gap: 4px;
+}
+
+.import-status-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.import-status-new {
+  border: 1px solid #abefc6;
+  background: #ecfdf3;
+  color: #067647;
+}
+
+.import-status-duplicate,
+.import-status-possible_duplicate {
+  border: 1px solid #fecdca;
+  background: #fef3f2;
+  color: #b42318;
+}
+
+.import-duplicate-meta {
+  font-size: 0.75rem;
+  color: #667085;
+}
+
+.import-fill-detail-row td {
+  background: #f8fafc;
+  white-space: normal;
+}
+
+.import-fills-wrap {
+  overflow-x: auto;
+}
+
+.import-fills-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.import-fills-table th,
+.import-fills-table td {
+  border-bottom: 1px solid #e4e7ec;
+  padding: 6px;
+  text-align: left;
+}
+
+.import-fills-empty {
+  color: #667085;
+  font-size: 0.85rem;
+}
+
+.import-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.import-actions button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #0b74de;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.import-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 699px) {
+  .import-upload-form {
+    grid-template-columns: 1fr;
+  }
+
+  .import-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}

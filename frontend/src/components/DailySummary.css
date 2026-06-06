@@ -1,0 +1,59 @@
+.daily-summary-panel {
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d2939;
+}
+
+.daily-summary-panel h2 {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+}
+
+.summary-date {
+  margin: 0 0 12px;
+  color: #475467;
+}
+
+.summary-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.summary-grid article {
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f8fafc;
+}
+
+.summary-grid h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #475467;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.summary-grid p {
+  margin: 6px 0 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.summary-interpretation {
+  margin: 12px 0 0;
+  font-weight: 600;
+}
+
+.summary-status {
+  margin: 8px 0 0;
+  color: #475467;
+}
+
+.summary-status.error {
+  color: #b42318;
+}

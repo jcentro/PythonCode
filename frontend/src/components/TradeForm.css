@@ -1,0 +1,237 @@
+.trade-form-panel {
+  border: 1px solid #d0d5dd;
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d2939;
+  min-width: 0;
+}
+
+.trade-form-panel h2 {
+  margin: 0 0 14px;
+  font-size: 1.25rem;
+}
+
+.trade-form {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.duplicate-trade-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 8px 10px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #344054;
+}
+
+.trade-form .duplicate-trade-banner button {
+  border: 0;
+  background: transparent;
+  color: #0b74de;
+  text-decoration: underline;
+  font: inherit;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer;
+}
+
+.trade-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  min-width: 0;
+}
+
+.trade-form input,
+.trade-form select,
+.trade-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 10px;
+  font: inherit;
+  color: inherit;
+  background: #ffffff;
+}
+
+.ticker-input-wrap {
+  position: relative;
+  min-width: 0;
+}
+
+.ticker-suggestions {
+  position: absolute;
+  z-index: 2;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(16, 24, 40, 0.1);
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.ticker-suggestions li {
+  margin: 0;
+}
+
+.trade-form .ticker-suggestions button {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  padding: 8px 10px;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.trade-form .ticker-suggestions button:hover {
+  background: #f2f4f7;
+}
+
+.trade-form textarea {
+  resize: vertical;
+}
+
+.trade-form .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.trade-form .checkbox input {
+  width: 16px;
+  height: 16px;
+}
+
+.trade-form .fills-editor-label {
+  gap: 8px;
+}
+
+.trade-form-helper {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #667085;
+}
+
+.trade-form-inline-actions {
+  display: grid;
+  gap: 6px;
+}
+
+.trade-form button.trade-form-inline-link,
+.trade-form button.trade-form-inline-save,
+.trade-form button.trade-form-inline-cancel {
+  width: auto;
+  justify-self: start;
+}
+
+.trade-form button.trade-form-inline-link {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #0b74de;
+  padding: 0;
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.trade-form button.trade-form-inline-link:disabled {
+  background: transparent;
+  color: #98a2b3;
+}
+
+.trade-form-inline-create {
+  display: grid;
+  gap: 8px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 10px;
+}
+
+.trade-form-inline-create-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.trade-form button.trade-form-inline-save {
+  padding: 8px 12px;
+}
+
+.trade-form button.trade-form-inline-cancel {
+  border: 1px solid #d0d5dd;
+  background: #ffffff;
+  color: #344054;
+  padding: 8px 12px;
+}
+
+.trade-form button.trade-form-inline-cancel:disabled {
+  background: #ffffff;
+  color: #98a2b3;
+}
+
+.trade-form-inline-error {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #b42318;
+}
+
+.trade-form button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #0b74de;
+  cursor: pointer;
+}
+
+.trade-form button:disabled {
+  background: #98a2b3;
+  cursor: not-allowed;
+}
+
+.status {
+  margin: 0;
+  font-weight: 600;
+}
+
+.status.error {
+  color: #b42318;
+}
+
+.status.success {
+  color: #067647;
+}
+
+.status-list {
+  margin: 0;
+  padding-left: 18px;
+  font-weight: 600;
+}
+
+.status-list.error {
+  color: #b42318;
+}

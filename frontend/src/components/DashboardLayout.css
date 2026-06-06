@@ -1,0 +1,68 @@
+.dashboard-layout {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "summary"
+    "statistics"
+    "addTrade"
+    "trades"
+    "manageSetups"
+    "manageEmotions";
+}
+
+.dashboard-area {
+  min-width: 0;
+}
+
+.dashboard-summary {
+  grid-area: summary;
+}
+
+.dashboard-statistics {
+  grid-area: statistics;
+}
+
+.dashboard-add-trade {
+  grid-area: addTrade;
+}
+
+.dashboard-trades {
+  grid-area: trades;
+}
+
+.dashboard-manage-setups {
+  grid-area: manageSetups;
+}
+
+.dashboard-manage-emotions {
+  grid-area: manageEmotions;
+}
+
+@media (min-width: 700px) and (max-width: 1099px) {
+  .dashboard-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "summary statistics"
+      "addTrade addTrade"
+      "trades trades"
+      "manageSetups manageEmotions";
+  }
+}
+
+@media (min-width: 1100px) {
+  .dashboard-layout {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "summary statistics"
+      "addTrade trades"
+      "addTrade manageSetups"
+      "addTrade manageEmotions";
+  }
+
+  .dashboard-trades {
+    position: sticky;
+    top: 16px;
+    align-self: start;
+  }
+}

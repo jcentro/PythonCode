@@ -1,0 +1,126 @@
+.settings-backup-panel {
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background: #f8fafc;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.settings-backup-description {
+  margin: 0;
+  font-size: 0.84rem;
+  color: #475467;
+}
+
+.settings-backup-button {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #344054;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  cursor: pointer;
+  justify-self: start;
+}
+
+.settings-backup-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.settings-backup-file-label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #475467;
+}
+
+.settings-backup-file-label input {
+  font: inherit;
+  color: #344054;
+}
+
+.settings-backup-status {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.settings-backup-status.error {
+  color: #b42318;
+}
+
+.settings-backup-status.success {
+  color: #067647;
+}
+
+.settings-danger-panel {
+  border: 1px solid #fecdca;
+  border-radius: 10px;
+  background: #fffbfa;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.settings-danger-description {
+  margin: 0;
+  font-size: 0.84rem;
+  color: #912018;
+}
+
+.settings-danger-confirm {
+  display: grid;
+  gap: 8px;
+}
+
+.settings-danger-label {
+  display: grid;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #912018;
+}
+
+.settings-danger-label input {
+  font: inherit;
+  color: #344054;
+}
+
+.settings-danger-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.settings-danger-button {
+  border: 1px solid #f04438;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #b42318;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 700;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.settings-danger-button.confirm {
+  background: #d92d20;
+  border-color: #d92d20;
+  color: #ffffff;
+}
+
+.settings-danger-button.cancel {
+  border-color: #fecdca;
+  color: #912018;
+}
+
+.settings-danger-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

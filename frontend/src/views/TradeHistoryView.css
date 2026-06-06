@@ -1,0 +1,41 @@
+.trade-history-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.trade-history-count {
+  margin: 2px 0 10px;
+  font-size: 0.85rem;
+  color: #475467;
+}
+
+.trade-history-export-actions {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.trade-history-export-actions button {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #344054;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.trade-history-export-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.trade-history-export-error {
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+  color: #b42318;
+}
